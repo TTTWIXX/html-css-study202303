@@ -8,19 +8,22 @@
 
     <style>
 
-        /* 바로 직속 자식을 선택함 */
-        /* 맨 뒤가 타겟, 앞에는 조건 */
-
-        div > .orange {
+        /* 동시에 여러 조건을 만족하는 경우 */
+    
+        li.orange {
             background: orange;
         }
 
-        body > div > ul > li {
+        div#tomato {
+            background: tomato;
+        }
+
+        #apple.reverse {
             color: red;
         }
 
-        #circle > h1 > .left > input#accont.name {
-            
+        h1.yellow.low.primary#change {
+            background: yellow;
         }
 
     </style>
