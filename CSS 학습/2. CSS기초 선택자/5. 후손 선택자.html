@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* 후손을 선택함 */
+        /* 맨 뒤가 타겟, 앞에는 조건 */
+
+        div .orange {
+            background: orange;
+        }
+
+        body #tomato {
+            background: tomato;
+        }
+
+        .wrap div {
+            font-size: 1.5em;
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h1 class="low yellow primary center" id="change">안녕하세요</h1>
+    
+    <!-- div>ul>li*3 -->
+    <div class="wrap">
+        <ul>
+            <li id="apple" class="reverse center">사과</li>
+            <li>포도</li>
+            <li class="orange">오렌지</li>
+        </ul>
+
+        <!-- div+p+span -->
+        <section>
+            <div>당근</div>
+        </section>
+        <p id="tomato">토마토</p>
+        <span class="orange">오렌지</span>
+    </div>
+
+</body>
+</html>
