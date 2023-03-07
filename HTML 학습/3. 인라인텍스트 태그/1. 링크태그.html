@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="github-link">깃허브로 이동</span>
+
+    <a href="http://www.naver.com">네이버 링크</a>
+    <!-- alt+shift 방향키 아래 아래로 복사된다. -->
+    <a href="http://www.google.com" target="_blank">구글 링크</a>
+    <a href="../2. 컨텐츠 태그/2. 목록태그.html">목록태그 페이지</a>
+    <!-- 절대경로는 파일 위치가 노출되므로 보안상 차단되어있다. 따라서 상대경로로 표시하여야한다. -->
+    
+    <a href="tel:+821072709984">문의전화</a>
+    <a href="mailto: tkddnr8181@naver.com">메일문의</a>
+
+    <!-- div#top>h1+p -->
+    <div id="top">
+        <h1>안녕하세요</h1>
+        <p style="height: 2000px;">
+            안녕!
+        </p>
+    </div>
+
+    <a href="#top">맨 위로 이동</a>
+
+
+<script>
+
+    const $spanLink 
+        = document.getElementById('github-link');
+    
+    $spanLink.onclick = e => {
+        window.location.href = 'https://github.com';
+    };
+
+</script>
+
+
+
+
+
+</body>
+</html>
