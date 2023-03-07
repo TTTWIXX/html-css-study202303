@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #github-link {
+            color: #00f;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+
+    <span id="github-link">깃허브로 이동</span>
+    
+    <a href="https://www.naver.com">네이버 링크</a>
+    <a 
+        href="https://www.google.com" 
+        target="_blank"
+    >구글 링크</a>
+
+    <a href="../2. 컨텐츠 태그/2. 목록태그.html">목록태그 페이지</a>
+
+    <a href="tel:+821072709984">문의전화</a>
+    <a href="mailto:hsg9984@gmail.com">메일문의</a>
+
+    <!-- div#top>h1+p -->
+    <div id="top">
+        <h1>안녕하세요</h1>
+        <p style="height: 2000px;">
+            방가방가~~~
+        </p>
+    </div>
+
+    <a href="#top">맨 위로 이동</a>
+
+
+    <script>
+
+        const $spanLink 
+            = document.getElementById('github-link');
+        
+        $spanLink.onclick = e => {
+            window.location.href = 'https://github.com';
+        };
+
+    </script>
+
+</body>
+</html>
