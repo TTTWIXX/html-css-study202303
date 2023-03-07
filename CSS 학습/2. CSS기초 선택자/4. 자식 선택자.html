@@ -14,10 +14,16 @@
         div > .orange {
             background: orange;
         }
-
+        /* div의 후손중 orange class를 의미 따라서 span태그 오랜지도 포함 */
+        /* body #tomato는(body의 후손은 id tomato 이다.) 적용되나,  
+        body > #tomato 적용x(아이디가 tomato인 부모는 body가아니다.)
+        body#tomato는 body태그에 idtomato가 있어야 적용된다.
+        */
+        
         body > div > ul > li {
             color: red;
         }
+        
 
         #circle > h1 > .left > input#accont.name {
             

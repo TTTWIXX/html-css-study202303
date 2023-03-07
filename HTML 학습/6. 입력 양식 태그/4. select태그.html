@@ -18,16 +18,24 @@
             value="홍길동" 
             disabled
         >
+        <!-- readonly와 disabled는 비슷하나 readonly는 서버를 통해 값이 나간다. 
+            disabled는 서버로 데이터가 넘어가지않는다.-->
         
         <br>
 
         <select class="orange" name="coffee">
             <option class="orange" value="아메리카노">Americano</option>
             <option value="카페라떼" selected>Caffe Latte</option>
+            <!-- selected : 게시판 검색창 제목,내용 있는곳,
+                 화면이 새로고침되도 유지한다. -->
             <option value="카푸치노" disabled>Cappuccino</option>
+            <!-- 보여지는것은 영어 커피이름이지만 서버로 
+                전송될때는 한국어 커피이름이 전송된다. -->
+            <!-- disabled : 선택못하게 한다. -->
         </select>
 
         <button>확인</button>
+        <!-- 타입을 생략하면 submit이다. -->
 
     </form>
 
