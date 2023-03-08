@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            /* 기본적으로 body태그에 padding이지정되어있다. */
+        }
+
+        .container{
+            width: 400px;
+            height: 300px;
+            border: 4px solid red;   
+            
+            margin-left: 50px;
+            margin-top: 100px;
+        }
+        .box{
+            width: 25%;
+            height: 100px;
+            border : 4px solid gray;
+            background: #333;
+        }
+
+        .box:first-child{
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+        .box:last-child{
+            
+            margin-left: 37.5%;
+            margin-right: 37.5%;
+            /* %를 이용하여 중앙으로 위치 */
+            /* 매번 계산할필요없이
+            좌우 마진을 auto로 설정하면
+            박스가 x축 중앙정렬됨*/
+        }
+
+        .item{
+            width: 200px;
+            height: 200px;
+            background: skyblue;
+
+            margin: 20px;
+            /* 그냥 margin 이라고 쓰면 4군데 전부 적용된다. */
+            margin: 30px 50px;
+            /*     [상하][좌우] */
+            margin: 40ox 50px 60px;
+            /*      [상][좌우][하] */
+            margin: 10px 20px 30px 40px;
+            /* 위부터 시계방향으로 */
+        }
+        section{
+            padding: 20px;
+            height: 70px;
+            background: violet;
+        }
+        .text{
+            width: fit-content;
+            /* border: 2px solid orange; */
+            margin: 0 auto;
+            /* margin 이 없으면 auto로 분배가 되지않는다. */
+            /* margin: 0 auto는 부모박스 안에서 자식박스의 x축 중앙정렬
+                필수적으로 자식의 가로가 부모보다 작아야 여유마진을 분배할 수있음
+            */
+            /* width 를 적지 않으면 100%이다. */
+            /* text-align 은 박스 안에서 중앙으로 옮기는것이다
+                따라서 만약 박스가 중앙에 있지 않으면 
+                text-align을 해도 전체적으로 중앙에 오지않는다.
+            */
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="text">하하호호</div>
+    </section>
+
+
+    <!-- .container>.box*2 -->
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="item"></div>
+
+
+
+
+
+</body>
+</html>

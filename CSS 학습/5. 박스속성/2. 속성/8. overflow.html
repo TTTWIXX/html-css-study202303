@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 300px;
+            height: 250px;
+            border: 4px solid gray;
+            overflow: auto;
+            /* 부모에게 건다.! */
+            /* auto: 넘치면 넘치는 곳만 scroll만든다. */
+            /* hidden: 넘치면 가린다. */
+        }
+        .parent .child{
+            width: 100px;
+            height: 100px;
+            background: red;
+            border: 4px solid orange;
+            font-size: 40px;
+        }
+
+        .parent .child:hover{
+            opacity: 0.6;
+        }
+        *{
+            box-sizing: border-box; 
+        }
+       
+        .album{
+            width: 300px;
+            height: 400px;
+            border: 2px solid gray;
+            padding: 40px;
+            margin: 100px auto;
+        }
+        .album .img-box{
+          
+            height: 300px;
+            border: 2px solid lightgray;
+            border-radius: 50%;
+        }
+
+        .album .img-box img{
+            width: 100%;
+            overflow: hidden;
+
+        }
+
+    </style>
+</head>
+<body>
+    <!-- .album>.img-box>img -->
+    <div class="album">
+        <div class="img-box">
+            <img src="http://t1.daumcdn.net/friends/prod/editor/dc8b3d02-a15a-4afa-a88b-989cf2a50476.jpg" alt="그림"></box>
+        </div>
+    </div>
+
+
+    <!-- .parent>.child{$}*4 -->
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+    </div>
+    <!--  -->
+    
+</body>
+</html>

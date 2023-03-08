@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;/* 패딩, 보더로 가로세로가 변하는걸 방지 */
+        }
+
+        .container{
+            width: 500px;
+            height: 500px;
+            background: orange;
+            margin-left: 100px;
+            padding-left: 50px; /* padding을 넣게되면 박스의 크기가 커진다. */
+            padding-top: 100px;
+        }
+        .box{
+            width:250px;
+            height:250px;
+            background: tomato;
+            font-size: 2em;
+            color: #fff;
+            padding: 15px;
+            /* 상하좌우로 padding을 줄수있다. */
+        }
+
+        .card{
+            width: 200px;
+            height: 300px;
+            border: 2px solid gray;
+            margin-bottom: 100px;
+            padding: 10px;
+        }
+        .card .img-box{
+            height: 200px;
+            background: lightgray;
+        }
+        .card .text-box{
+            background-color: red;
+        }
+        /* 자식에게 마진을 각각 넣는것보다 
+           부모에게 패딩을 한번만 넣는게 효율적이다.
+        */
+    </style>
+</head>
+<body>
+
+    <!-- section.card>div.img-box+p.text-box -->
+    <div class="card">
+        <div class="img-box"></div>
+        <p class="text-box">
+            텍스트~~~
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요
+        </div>
+    </div>
+
+</body>
+</html>
