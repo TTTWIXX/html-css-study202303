@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 300px;
+            border: 2px solid red;
+            margin: 50px auto 0;
+
+            /* 이미지 600 X 385 (액자보다 이미지가 큰상황)*/
+            background-image: url('../../img/tulip.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* cover: 이미지의 손해를 최소로 계산하여 보여준다.*/
+            /* contain: 이미지 손해를 보진 않지만 빈공간이 생길수 있다. */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

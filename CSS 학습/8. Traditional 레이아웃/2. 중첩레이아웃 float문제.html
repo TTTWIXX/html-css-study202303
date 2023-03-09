@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 해제용 클래스 */
+        .clearfix::after {
+            content: '';  /* before, after는 content가 필수이다!! */
+            display: block;
+            clear: both;
+            /* clear와 float는 동일해야 하나
+                귀찮기 때문에 그냥 both로 설정한다.
+            */
+            
+            /* clear할때마다 style을 추가하는것이아니라
+                style을 만들어놓고 필요한 box에 클래스를 부여한다.
+                주의!: 부모 태그에 클래스를 부여한다.
+            */
+
+        }
+
+        .ct {
+            width: 700px;
+            padding: 20px;
+            margin: 20px;
+            /* 중복코드가 반복되는것은 좋지않다.
+           중복될경우 class로 묶어 한번에 처리한다.
+        */
+        }
+
+
+
+        .container1 {
+            border: 3px solid red;
+        }
+
+        .container2 {
+            border: 3px solid blue;
+        }
+
+        .container3 {
+            border: 3px solid green;
+        }
+
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 3px solid green;
+            background: yellowgreen;
+            border-radius: 20px;
+
+            float: left
+                /* float */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ct container1 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="ct container2 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="ct container3 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
