@@ -63,26 +63,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- reset css -->
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+    <!-- common css -->
+    <link rel="stylesheet" href="../../img/common.css">
 </head>
+<style>
+    .container {
+        /* background: orange; */
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .container header {
+        /* border: 4px solid red; */
+        border-bottom: 4px solid lightgray;
+        padding: 15px 10px;
+        height: 100px;
+        line-height: 100px;
+    }
+
+    .container header h1 {
+        /* background: skyblue; */
+        float: left;
+        font-weight: 700;
+        font-size: 1.5em;
+        margin-left: 10px;
+    }
+
+    .container header nav {
+        /* background: violet; */
+        float: right;
+    }
+
+    .container header nav li {
+        /* border: 3px solid #000; */
+        float: left;
+        margin-right: 15px;
+    }
+
+    .container .main {
+        border: 3px solid rgba(211, 211, 211, 0.6);
+        margin: 40px 0 60px;
+        padding: 40px 35px;
+    }
+
+    .container .main h2 {
+        /* background: aqua; */
+        margin-bottom: 50px;
+        border-bottom: 3px dashed red;
+        padding-bottom: 5px;
+
+        font-weight: 700;
+        font-size: 1.8em;
+        color: red;
+    }
+
+    .container .main .article-list {
+        /* background: orange; */
+    }
+    .container .main .article-list article {
+        border: 2px solid blue;
+        width: 29.3%;
+        margin-right: 3%;
+        height: 250px;
+        padding: 40px;
+        float: left;
+    }
+    .container .main .article-list article:first-child {
+        margin-left: 3%;
+    }
+
+    .container .main .article-list article * {
+        text-align: center;
+    }
+    .container .main .article-list article h3 {
+        /* background: tomato; */
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 1.3em;
+    }
+    .container .main .article-list article p {
+        /* background: aqua; */
+    }
+
+    .container footer {
+        border: 4px solid green;
+    }
+</style>
+
 <body>
     
 
 </html>
 
     <div class="container">
-        <header>
+        <header class="clearfix">  <!-- 부모에게 clear -->
             <h1>로고</h1>
             <nav>
-                <ul>
-                   <li><a href="">메뉴1</a></li>
-                   <li><a href="">메뉴2</a></li>
-                   <li><a href="">메뉴3</a></li> 
+                <ul class="clearfix">
+                   <li><a href="#">메뉴1</a></li>
+                   <li><a href="#">메뉴2</a></li>
+                   <li><a href="#">메뉴3</a></li> 
                 </ul>
             </nav>
         </header>
         <section class="main">
             <h2>section</h2>
-            <div class="article-list">
+            <div class="article-list clearfix">
                 <article>
                     <h3>article1</h3>
                     <p>blah blah~~</p>        
