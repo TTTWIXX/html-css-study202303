@@ -38,6 +38,7 @@
     padding-top: 5px;
     padding-left: 5px;
     font-size: 12px;
+   
 
 }
 #wrapper .container .side-menu li{
@@ -49,6 +50,7 @@
 #wrapper .container .banner{
     float: right;
     width: 25%;
+    padding: 10px 0px 0px 5px;
 }
 #wrapper .container .banner .all{
     color: lightgray;
@@ -80,6 +82,11 @@
 #wrapper .container .main-content{
     width: 50%;
     float: left;
+    background-color: lightgray;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  
 }
 
 .container .main-content .art-piece h4{
@@ -90,4 +97,33 @@
     padding-bottom: 5px;
     font-size: 12px;
     margin-top: 15px;
+    margin-bottom: 10px;
+}
+#wrapper footer{
+    background-color: rgb(6, 31, 73);
+    color: white;
+    font-size: 8px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.artist{
+    color: rgb(6, 31, 73);
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 10px;
+
+}
+.detail{
+    color: rgb(6, 31, 73);
+    font-size: 8px;
+}
+.banner .link{
+    margin-top: 20px;
+}
+
+.banner .link li{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 8px;
 }
