@@ -1,0 +1,93 @@
+@import url(../../common.css);
+*{
+    box-sizing: border-box;
+}
+#wrapper{
+    width: 800px;
+    margin: auto;
+
+}
+
+#wrapper header{
+    background:  orange;
+    color: white;
+    text-align: center;
+}
+#wrapper header h1{
+    font-size: 60px;
+}
+#wrapper header span{
+    display: block;
+    font-size: 12px;
+}
+#wrapper header .stit{
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    font-size: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#wrapper .container .side-menu{
+    float: left;
+    width: 25%;
+}
+#wrapper .container .side-menu h3{
+    background-color: rgba(162, 7, 7, 0.813);
+    color: white;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 12px;
+
+}
+#wrapper .container .side-menu li{
+    text-decoration: underline;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+}
+#wrapper .container .banner{
+    float: right;
+    width: 25%;
+}
+#wrapper .container .banner .all{
+    color: lightgray;
+    text-decoration: underline;
+    font-size: 20px;
+    margin-top: 10px; 
+}
+#wrapper .container .banner .love{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: orange;
+    display: block;
+}
+#wrapper .container .banner strong{
+    margin-bottom: 10px;
+}
+#wrapper .container .banner .link a{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+#wrapper .container .banner .link span{
+    font-size: 13px;
+    display: block;
+
+}
+#wrapper .container .main-content{
+    width: 50%;
+    float: left;
+}
+
+.container .main-content .art-piece h4{
+    background-color: rgb(6, 31, 73);
+    color: white;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    margin-top: 15px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .root{
+        width: 600px;
+        height: 500px;
+        border: 4px dashed orange;
+        padding: 100px;
+        font-size: 30px;
+
+    }
+    .parent{
+        width: 400px;
+        height: 300px;
+        border: 4px dashed blue;
+        padding: 50px;
+    }
+    .child{
+        width: 120px;
+        height: 80px;
+        border: 4px dashed red;
+        background: tomato;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 80px;
+        /* position: static; 포지션 값이 없는것과 같다. */
+
+    }
+
+    .abs{
+        position: absolute;
+        /* 부모중 포지션이 있으면
+            그 부모가 기준이된다.
+        */
+        top: 50px;
+        right: 30px;
+    }
+    .parent a{
+        background: orange;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        float: left;
+        /* 인라인 속성의 태그는 position: absolute나
+           float속성이 부여되면 자동으로 block성질로 변환
+        */
+
+    }
+    /* 박스 좌우 상하 정중앙 배치 공식 */
+    .center{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+</style>
+<body>
+    
+    <!-- .root>.parent>.child{$}*# -->
+    <div class="root">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child ">2</div>
+            <div class="child">3</div>
+            <a href="#">444444</a>
+        </div>
+    </div>
+
+</body>
+</html>

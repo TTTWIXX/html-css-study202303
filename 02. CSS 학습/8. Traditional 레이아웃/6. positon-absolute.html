@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+       .container {
+            margin: 100px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background: orange;
+            border: 4px dashed red;
+            font-size: 30px;
+            text-align: center;
+            line-height: 100px;
+        }
+        .box:nth-child(2) {
+            position: absolute;
+            left: 50px;
+            top: 30px;
+        }
+        /* float처럼 앞으로 올라온다. 
+            relative처럼 원래 위치가 기준이 아니라
+            
+        */
+        
+    
+
+
+</style>
+<body>
+    <!-- .container>.box{$}*3 -->
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+</body>
+</html>

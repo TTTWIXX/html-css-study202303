@@ -1,0 +1,84 @@
+@import url('../../common.css');
+
+
+*{
+    box-sizing: border-box;
+}
+#wrapper{
+    width: 720px;
+    margin: 0px auto;
+}
+
+div header{
+    background-color: rgb(30, 63, 93);
+   
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+div header h1{
+    color: yellow;
+    font-size: 1.2em;
+}
+
+div header strong{
+    color: white;
+    font-size: 3.7em;
+}
+div header span{
+    font-size: 1.7em;
+}
+div header em{
+    color: white;
+    font-size: 2.2em;
+}
+div .container{
+    background-color: lightgray;
+ }
+
+div .container .menu{
+    float: left;
+ 
+    width: 20%;
+    padding: 10px 0px 0px 10px;
+
+    
+}
+div .container .menu li{
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+div .container .content{
+    width: 80%;
+    float: right;    
+}
+
+
+
+div .container .content h2{
+    background: rgb(161, 27, 27);
+    color: yellow;
+    font-size: 1.2em;
+    padding: 10px 0px 10px 20px;
+    font-family: cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+div .container .content p{
+    padding: 20px 15px 20px 15px;
+    text-align: justify;
+    line-height: 20px;
+    background: white;
+}
+div footer{
+    background-color: darkgray;
+    float: left;
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 10px 0 10px 25px;
+    font-size: 0.8em;
+    
+
+}
