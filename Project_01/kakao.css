@@ -279,30 +279,150 @@ body {
     color: #a5a7b2
 }
 
-
-
+.main-7{
+    height: 1200px;
+    position: relative;
+}
+.submain-10{
+    width:55%;
+    margin: 10% auto;
+}
 
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #fff;
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    text-align: left;
     border: none;
+    border-bottom: 1px solid #e6e6e6;;
+    text-align: left;
     outline: none;
-    transition: 0.4s;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
-    background-color: #ccc;
-  }
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    padding: 0 18px;
-    background-color: white;
+    font-size: 18px;
+    transition: 0 ;
+    border-top: 1px solid #e6e6e6;
+    
+}
+
+.active{
+    background-color: #f4f4f4;
+}
+.accordion:hover {
+      
+}
+
+.panel {
+    padding: 0 30px;
     display: none;
+    background-color: #f4f4f4;
     overflow: hidden;
-  }
+
+}
+
+.panel a{
+    float: right;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+
+}
+
+.panel h3 {
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #111;
+}
+.panel p {
+    margin-top: 15px;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+}
+
+.submain-11{
+    text-align: center;
+    width: 911px;
+    margin: 0px auto;
+}
+
+.submain-11 h2{
+    font-weight: normal;
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+
+}
+.submain-11 a{
+    float: left;
+    margin-top: 20px;
+    margin-right: 5px;
+    width: 140px;
+    height: 80px;
+    text-align: left;
+    padding: 20px 12px 12px 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    
+
+}
+.submain-11 .square1{
+    background: url('https://og.kakaobank.io/view/3a20c602-7ed4-49ab-9440-6faee4f22e9e') #35A67D
+                no-repeat 100px 40px/30px 30px;
+    ;
+ } 
+.submain-11 .square2{
+        background: url('https://og.kakaobank.io/view/3a20c602-7ed4-49ab-9440-6faee4f22e9e')  #35A67D
+        no-repeat 100px 40px/30px 30px;;
+    }
+
+    .submain-11 .square3,.square4,.square5{
+        background: url('https://og.kakaobank.io/view/3a20c602-7ed4-49ab-9440-6faee4f22e9e')  #35A67D
+        no-repeat 100px 40px/30px 30px;
+    }
+
+    
+.submain-11 .square6, .square7, .square8, .square9{
+    background: url('https://og.kakaobank.io/view/ccb85f9f-28cb-49f0-b6f3-b07827cc5260')  #526baa
+        no-repeat 100px 40px/30px 30px;
+}
+
+.tail{
+    float: right;
+    font-size: 14px;
+    color: #888;
+    margin-top: 100px;
+    margin-right: 350px;
+
+}
+
+.submain-12 a{
+    float: left;
+    padding: 4px 0;
+    font-size: 12px;
+    color: #666;
+    margin-right: 5px;
+
+}
+.submain-13 {
+    font-size: 12px;
+    text-align: left;
+}
+
+.submain-14{
+    font-size: 13px;
+    font-weight: 600;
+    color: #666;
+}
+.main-8{
+    background-color: #f0f0f0;
+}
+.footer{
+    width: 65%;
+    background: pink;
+    margin: 0 auto;
+}

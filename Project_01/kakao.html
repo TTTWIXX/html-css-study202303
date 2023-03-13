@@ -10,26 +10,9 @@
     <!-- css -->
     <link rel="stylesheet" href="kakao.css">
     <title>Document</title>
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
+    <style>
 
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                /* Toggle between adding and removing the "active" class,
-                to highlight the button that controls the panel */
-                this.classList.toggle("active");
-
-                /* Toggle between hiding and showing the active panel */
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-                }
-            });
-        }
-    </script>
+    </style>
 
 </head>
 
@@ -196,32 +179,172 @@
         </section>
 
         <section class="main-7">
-            <h2>Animated Accordion</h2>
-            <p>Click on the buttons to open the collapsible content.</p>
+            <div class="submain-10">
+                <button class="accordion">상품안내</button>
+                <div class="panel">
+                    <p class="subpanel">
+                        <h3>가입대상</h3>
+                        <p> 실명의 개인<br>
+                            ※ 주민등록증 또는 운전면허증을 소지한 만 17세 이상 내국인</p>
 
-            <button class="accordion">Section 1</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
+                        <h3>예금종류</h3>
+                        <p>보통예금</p>
+                        <h3>저축금액</h3>
+                        <p>제한없음</p>
+
+                        <h3>계약기간</h3>
+                        <p>제한없음</p>
+
+                        <h3>예금자보호대상</h3>
+                        <p>이 예금은 예금자보호법에 따라 예금보험공사가 보호하되, 보호한도는 본 은행에 있는 귀하의 모든 예금보호 대상 금융상품의 원금과 소정의 이자를 합하여 1인당 "최고
+                            5천만원"이며, 5천만원을 초과하는 나머지 금액은 보호하지 않습니다.</p>
+                    </p>
+                </div>
+
+                <button class="accordion">금리정보</button>
+                <div class="panel">
+
+                    <p class="subpanel">
+                        <h3>기본금리</h3>
+                        <p> 연 0.10% (2023.03.13기준, 세금공제 전)</p>
+
+                        <h3>이자지급방법</h3>
+                        <p>매월 네번째 금요일을 기준으로 결산하여 토요일에 이자를 지급
+                        </p>
+                        <h3>이자계산방법</h3>
+                        <p>매일 최종 잔액에 대하여 약정된 금리를 적용하여 결산일에 이자를 지급</p>
+
+                    </p>
+                </div>
+
+                <button class="accordion">수수료정보</button>
+                <div class="panel">
+                    <p class="subpanel">
+
+
+
+                        <h3>카카오뱅크 고객에게 다음 수수료 면제</h3>
+                        <p> 1. 타행 이체 수수료<br>
+                            2. 타행 자동이체 수수료<br>
+                            3. ATM(모든 은행, 편의점 등) 입금/이체/출금수수료<br>
+                            4. 증명서 발급수수료<br><br>
+                            ※ 수수료는 카카오뱅크의 정책에 따라 변경될 수 있으며, 변경 시에는 시행 1개월 전에 홈페이지, 모바일앱 등을 통해 안내해 드립니다.</p>
+
+                    </p>
+                </div>
+                <button class="accordion">기타사항</button>
+                <div class="panel">
+                    <p class="subpanel">
+
+
+                        <h3> 양도 및 담보제공 - 불가</h3>
+
+                        <h3>명의변경 - 불가</h3>
+                        <p>상속에 의한 명의변경은 가능<br>
+                            (단, 상속인이 카카오뱅크 계좌를 보유한 경우에 한함)
+                        </p>
+                        <h3>계약해지</h3>
+                        <p> 이 통장의 해지는 자동이체, 카드 결제계좌 등 결제성 거래가 모두 해제되고, 이 통장의 실명확인을 근거로 개설된 상품이 모두 해지된 경우에 한하여 가능</p>
+                        <h3>명의변경 - 불가</h3>
+                        <p> 원금 또는 이자 지급 관련 제한<br>
+                            질권, 압류 등 출금제한 사고신고가 등록된 경우에는 해지가 불가하며 원금 및 이자 지급이 제한됨
+                        </p>
+                        <h3>상품 관련 문의 및 분쟁처리 절차</h3>
+                        <p>상속에 의한 명의변경은 가능<br>
+                            상품에 대한 문의·민원·분쟁 등 상담이 필요하실 경우 카카오뱅크 고객센터, 앱, 인터넷 홈페이지로 문의하실 수 있으며 금융감독원 등에 도움을 요청할 수 있습니다.
+                        </p>
+                        <h3> 꼭 알아두세요</h3>
+                        <p>금융상품에 관한 계약을 체결하기 전에 금융상품 설명서 및 약관을 반드시 읽어보시기 바랍니다.
+                            일반금융소비자는 은행으로부터 해당 금융상품에 대하여 설명을 받을 권리가 있습니다.
+
+                        </p>
+                    </p>
+                </div>
+                <button class="accordion">상품설명서 및 이용약관</button>
+                <div class="panel">
+                    <p class="subpanel clearfix">
+
+                        <h3>카카오뱅크 입출금통장 상품설명서 <a href="#">다운로드&nbsp;<i class="fa-solid fa-download"></i></a> </h3>
+                        <p> 연 0.10% (2023.03.13기준, 세금공제 전)</p>
+
+                        <h3>상품 이용 약관다운로드<a href="#">다운로드&nbsp;<i class="fa-solid fa-download"></i></a></h3>
+                        <p>• 예금거래기본약관<br>
+                            • 입출금이자유로운예금 약관<br>
+                            • 카카오뱅크 입출금통장 특약<br>
+                        </p>
+
+                    </p>
+                </div>
             </div>
 
-            <button class="accordion">Section 2</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
+            <div class="clearfix submain-11">
+                <div>
+                    <h2>카카오뱅크의 다른 추천</h2>
+                </div>
+                <a href="https://www.kakaobank.com/products/moim" class="square1">모임통장 </a>
+                <a href="https://www.kakaobank.com/products/safeboxes" class="square2">세이프박스</a>
+                <a href="https://www.kakaobank.com/products/deposit" class="square3">정기예금</a>
+                <a href="https://www.kakaobank.com/products/savings" class="square4">자유적금</a>
+                <a href="https://www.kakaobank.com/products/26weeks" class="square5">26주적금</a>
+                <a href="https://www.kakaobank.com/products/emergencyLoan" class="square6">비상금대출</a>
+                <a href="https://www.kakaobank.com/products/creditLine" class="square7">마이너스 통장대출</a>
+                <a href="https://www.kakaobank.com/products/creditLoan" class="square8">신용대출</a>
+                <a href="https://www.kakaobank.com/products/leaseLoan" class="square9">전월세보증대출금</a>
+
             </div>
 
-            <button class="accordion">Section 3</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
+            <div class="clearfix">
+                <div class="tail">
+                    준법감시인 심의필 22-1007 (2022.11.24.~2023.11.23.)
+                </div>
             </div>
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                            panel.style.display = "none";
+                        } else {
+                            panel.style.display = "block";
+                        }
+                    });
+                }
+            </script>
+
+        </section>
+
+        <section class="main-8">
+            <div class="footer">
+                <div class="clearfix submain-12">
+                    <a href="">모바일뱅킹 서비스 이용약관</a>
+                    <a href="">전자금융거래 기본약관</a>
+                    <a href="">위치기반 서비스 이용약관 </a>
+                    <a href="">개인정보처리방침</a>
+                    <a href="">전자민원접수</a>
+                    <a href="">보호금융상품등록부</a>
+                    <a href="">상품공시실</a>
+                    <a href="">경영공시</a>
+                    <a href="">공지사항</a>
+                    <a href="">전자서명인증업무준칙</a>
+                    <a href="">카카오뱅크 인증서 서비스 이용약관</a>
+                    <a href="">전자서명인증서비스 개인정보처리방침</a>
+
+                </div>
+                <div class="clearfix submain-13">
+                    <div>(주)카카오뱅크∙윤호영∙사업자번호 375-88-00197대표전화 1599-3333(해외 +82-2-6420-3333)</div>
+                    <div>Copyright © KakaoBank Corp. All rights reserved.</div>
+                </div>
+                <div class="clearfix submain-14">
+                    <div><a href=""></a> 웹 접근성 품질인증 </div>   
+                    <div><a href=""></a> 웹 트러스트 인증</div> 
+                </div>
 
 
-
+            </div>
 
 
         </section>
