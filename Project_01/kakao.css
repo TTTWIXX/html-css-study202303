@@ -1,68 +1,76 @@
 @import url(../common.css);
 
-body{
+body {
     height: 3000px;
 }
-.head{
 
-    font-family: 'Yoon 윤고딕','돋움',dotum,sans-serif;
+.head {
+
+    font-family: 'Yoon 윤고딕', '돋움', dotum, sans-serif;
     background-color: #35A67D;
     color: white;
     position: fixed;
     width: 100%;
     height: 80px;
     z-index: 2000;
-    
-    
+
+
 }
 
-.head_box{
+.head_box {
     width: 60%;
     margin: 10px auto;
 }
-.head .head-logo {
-    margin: 15px;
-    float: left;
-    width: 116px;
-    height: 10px;
-    padding: 10px;
-    vertical-align: middle;
-    position :hidden;
-    background-image: url("https://og.kakaobank.io/view/83d5f69f-6bda-417b-8fc8-112930858187");
 
+.head .head-logo {
+    margin: 10px;
+    float: left;
 }
 
 
-.head .menu{
+.head .menu {
     float: right;
-    height: 45px;
+    height: 100%;
     width: 90px;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 45px;
-    
-   
+    text-align: center;
 }
-.head .menu_3{
+
+/* .head .menu:hover{
+    height: 500px;
+    background: white;
+    color: black;
+    display: block;
+} */
+.dropdown-container .dropdown {
+    float: left;
+
+}
+
+.head .menu_3 {
     border-bottom: white;
 
-}  
-.head .menu_5{
+}
+
+.head .menu_5 {
     border-radius: 22px;
     background: #fede22;
     border: 1px solid #fede22;
     color: black;
     text-align: center;
     margin-right: 30px;
-    
+
 }
 
-.main{
-    height: 374px;
+.main {
+    height: 500px;
     background-color: #35A67D;
     position: relative;
 }
-.main_1{
+
+.main_1 {
     color: white;
     position: absolute;
     left: 50%;
@@ -70,15 +78,231 @@ body{
     transform: translate(-50%, -50%);
     text-align: center;
 }
-.main_1 h2{
+
+.main_1 h2 {
     font-weight: 300;
     font-size: 24px;
     margin-bottom: 20px;
 
 }
-.main_1 span{
+
+.main_1 span {
     font-weight: 300;
     font-size: 58px;
     line-height: 70px;
 
 }
+
+
+.main_2 {
+    width: 800px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.main_2 li {
+    float: left;
+    width: 200px;
+    display: block;
+    margin-left: 50px;
+    line-height: 25px;
+}
+
+.main_2 li div {
+    margin-bottom: 10px;
+}
+
+.main-2 {
+    height: 630px;
+
+}
+
+.submain-1 {
+    margin-top: 250px;
+    margin-left: 400px;
+    float: left;
+    text-align: left;
+
+}
+
+.submain-1 div {
+    font-size: 40px;
+    line-height: 25px;
+}
+
+.submain-1 p {
+    margin-top: 20px;
+    float: left;
+    font-size: 15px;
+    line-height: 25px;
+    color: #666;
+
+}
+
+.main-3 {
+    height: 630px;
+}
+
+.submain-3 {
+    margin-top: 250px;
+    margin-right: 600px;
+    float: right;
+    text-align: left;
+
+}
+.submain-3 div {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.submain-3 p{
+    margin-top: 20px;
+    float: right;
+    font-size: 15px;
+    line-height: 25px;
+    color: #666;
+
+}
+
+
+
+
+.main-4 {
+    height: 630px;
+}
+
+.submain-5 {
+    margin-top: 250px;
+    margin-left: 400px;
+    float: left;
+    text-align: left;
+
+
+}
+.submain-5 div {
+    font-size: 40px;
+    line-height: 25px;
+}
+
+.submain-5 p{
+    margin-top: 20px;
+    float: left;
+    font-size: 15px;
+    line-height: 25px;
+    color: #666;
+
+}
+
+
+.main-5 {
+    height: 630px;
+}
+
+.submain-7 {
+    margin-top: 250px;
+    margin-right: 600px;
+    float: right;
+    text-align: left;
+
+}
+.submain-7 div {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.submain-7 p{
+    margin-top: 20px;
+    float: right;
+    font-size: 15px;
+    line-height: 25px;
+    color: #666;
+
+}
+.main-6 {
+    height: 630px;
+    background-color: #3e4459;
+    text-align: center;
+    position: relative;
+
+}
+.submain-9 div{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+
+}
+.submain-9 h2{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 1.3;
+    color: #fff;
+
+}
+
+
+.submain-9 p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 16px;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1.75;
+    color: #fff;
+
+}
+
+
+.submain-9 footer{
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #a5a7b2
+}
+
+
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }

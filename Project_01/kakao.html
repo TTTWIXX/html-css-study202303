@@ -10,9 +10,27 @@
     <!-- css -->
     <link rel="stylesheet" href="kakao.css">
     <title>Document</title>
-    <style>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
-    </style>
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
 </head>
 
 <body>
@@ -20,37 +38,201 @@
     <div class>
         <header class="head ">
             <div class="head_box clearfix">
-                <div class="head-logo "><a href="https://www.kakaobank.com/"></a>
+                <div class="head-logo ">
+                    <a href="https://www.kakaobank.com/">
+                        <img src="https://og.kakaobank.io/view/83d5f69f-6bda-417b-8fc8-112930858187" alt="head">
+                    </a>
                 </div>
                 <div class="head-menu clearfix">
                     <div class="menu menu_6"><a href="https://eng.kakaobank.com/"><i class="fa-solid fa-globe"></i></a>
                     </div>
                     <div class="menu menu_5"><a href="https://www.kakaobank.com/presentPaper">서류제출하기</a></div>
                     <div class="menu menu_4"><a href="https://www.kakaobank.com/Help/Guide/Faq">고객센터</a></div>
-                    <div class="menu menu_3"><a href="https://www.kakaobank.com/products/withdrawal">상품안내</a></div>
+                    <div class="menu menu_3"><a href="https://www.kakaobank.com/products/withdrawal">상품안내</a>
+                        <!-- <div class="clearfix dropdown-container">
+                            <a href="" class="dropdown">예적금
+                                <a href="" class="sub-dropdown">입출금통장</a>
+                                <a href="" class="sub-dropdown">모임통장</a>
+                                <a href="" class="sub-dropdown">세이프박스</a>
+                            </a>
+                            <a href="" class="dropdown">대출
+                                <a href="" class="sub-dropdown">비상금대출</a>
+                                <a href="" class="sub-dropdown">마이너스 통장대출</a>
+                                <a href="" class="sub-dropdown">신용대출</a>
+                            </a>
+                            <a href="" class="dropdown">서비스
+                                <a href="" class="sub-dropdown">내 신용정보</a>
+                                <a href="" class="sub-dropdown">해외송금 보내기</a>
+                                <a href="" class="sub-dropdown">해외송금 받기</a>
+                            </a>
+                            <a href="" class="dropdown">제휴서비스
+                                <da href="" class="sub-dropdown">증권사 주식계좌</da>
+                                <a href="" class="sub-dropdown"></a>
+                            </a>
+                            <a href="" class="dropdown">mini
+                                <a href="" class="sub-dropdown">카카오뱅크 mini</a>
+                                <a href="" class="sub-dropdown">mini카드</a>
+                                <a href="" class="sub-dropdown">mini 26일저금</a>
+                            </a>
+                            <a href="" class="dropdown">사업자
+                                <a href="" href="" class="sub-dropdown">개인사업자통장</a>
+                                <a href="" class="sub-dropdown">개인사업자 신용대출</a>
+                                <a href="" class="sub-dropdown">개인사업자 체크카드</a>
+                            </a>
+                        </div> -->
+                    </div>
                     <div class="menu menu_2"><a
                             href="https://www.kakaobank.com/IR/Announcement/Business/pages/1">IR투자정보</a></div>
                     <div class="menu menu_1"><a href="https://www.kakaobank.com/Corp/About/Identity">은행소개</a></div>
                 </div>
-
-
-
-
             </div>
 
         </header>
         <section class="main">
-            <div class="main_1">
-                 <h2>카카오뱅크 입출금통장</h2>   
-                <span>까다로운 계좌개설도<br> 정말 손쉽게</span>
+            <div class="under-head">
+                <div class="main_1">
+                    <h2>카카오뱅크 입출금통장</h2>
+                    <span>까다로운 계좌개설도<br> 정말 손쉽게</span>
+                </div>
+                <div></div>
+                <ul class="clearfix main_2">
+                    <li>
+                        <div>이미지1</div>
+                        <p>계좌 속 금고<br>
+                            세이프박스</p>
+                    </li>
+                    <li>
+                        <div>이미지2</div>
+                        <p>친구에게<br>
+                            간편하게 이체</p>
+                    </li>
+                    <li>
+                        <div>이미지3</div>
+                        <p>보안은<br>
+                            더 강력하게</p>
+                    </li>
+
+                </ul>
+            </div>
+
+        </section>
+        <section class="clearfix main-2">
+
+            <div class="submain-1">
+                <div>누구나 쉽고 스마트하게<br></div>
+                <p>통장의 많은 정보와 기능들을 쉽고 편리하게<br>
+                    이용할 수 있도록 디자인했습니다.<br>
+                    간편하게 이체, 거래내역 자세히 보기도 바로바로,<br>
+                    중요한 내용은 놓치지 않고 확인할 수 있습니다.</p>
+
+            </div>
+            <div class="submain-2">
+                <img src="" alt="">
+            </div>
+        </section>
+
+        <section class="clearfix main-3">
+            <div class="submain-3">
+                <div>계좌 속 금고,<br>
+                    세이프박스</div>
+                <p>여러 개의 통장을 만들지 않아도 쉽게 통장 잔고를<br>
+                    관리할 수 있습니다. 여유 자금이 있다면 하루만 맡겨도<br>
+                    연 2.60%(세전)를 제공하는 세이프박스에 보관해보세요.</p>
+
+            </div>
+            <div class="submain-4">
+                <img src="" alt="">
             </div>
 
         </section>
 
-    </div>
-    <header>
+        <section class="clearfix main-4">
+            <div class="submain-5">
 
-    </header>
+
+                <div>이체는 더욱 간편하게
+                </div>
+                <p>많은 내용을 입력할 필요없이 입금 계좌번호는<br>
+                    카카오톡 친구만 선택하면 간편하게 이체할 수 있습니다.<br>
+                    예약이체, 여러 건의 이체도 간편하게 이용해보세요.</p>
+
+            </div>
+            <div class="submain-6">
+                <img src="" alt="">
+            </div>
+
+        </section>
+
+        <section class="clearfix main-5">
+            <div class="submain-7">
+                <div>디자인은 내 맘대로<br>
+                    혜택은 누구에게나
+                </div>
+                <p>카카오프렌즈 캐릭터 디자인, 멋스러운 솔리드 디자인의<br>
+                    체크카드를 취향에 따라 선택할 수 있습니다.<br>
+                    모든 프렌즈 체크카드는 디자인이 달라도<br>
+                    혜택은 동일하게 제공됩니다.
+                </p>
+
+            </div>
+            <div class="submain-8">
+                <img src="" alt="">
+            </div>
+
+        </section>
+
+        <section class="main-6">
+            <div class="submain-9">
+                <div><img src="" alt="">이미지</div>
+                <h2>언제든지 이용할 수 있는 뱅크</h2>
+                <p>영업점에 방문없이 계좌개설, 대출신청, 해외송금, 증명서 발급까지<br>
+                    언제든 필요한 은행 업무를 카카오뱅크 모바일앱을 통해 이용해보세요.</p>
+                <footer>
+                    ※ 고객센터 유선상담은 밤 7시까지 운영되며, 톡상담 및 분실, 사고 신고에 대한 상담은 24시간 지원합니다. 고객센터 1599-3333
+                </footer>
+            </div>
+
+
+        </section>
+
+        <section class="main-7">
+            <h2>Animated Accordion</h2>
+            <p>Click on the buttons to open the collapsible content.</p>
+
+            <button class="accordion">Section 1</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="accordion">Section 2</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="accordion">Section 3</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+
+
+
+
+
+        </section>
+
+
+
+
+
+
+    </div>
+
 
 </body>
 
