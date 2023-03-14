@@ -46,7 +46,6 @@ body {
     margin-left: 17px
 }
 
-/*  */
 .head-dropdown {
     margin-top: 80px;
     background: #fff;
@@ -106,38 +105,6 @@ body {
     margin-top: 40px;
     display: block;
 }
-
-
-
-/* <section class="head-dropdown">
-                        <div class="dropdown-head_box clearfix">
-                            <div class="dropdown-head-logo ">
-                                <div class="dropdown-basic-line"></div>
-                                <a href="https://www.kakaobank.com/">
-                                    <img src="https://og.kakaobank.io/view/83d5f69f-6bda-417b-8fc8-112930858187" alt="head">
-                                </a>
-                            </div>
-                            <div class="dropdown-head-menu clearfix">
-                                <div class="dropdown-menu dropdown-menu_6"><a href="https://eng.kakaobank.com/"><i class="fa-solid fa-globe"></i></a>
-                                </div>
-                                <div class="dropdown-menu dropdown-menu_5">
-                                    <div class="dropdown-docu">
-                                        <a href="https://www.kakaobank.com/presentPaper">서류제출하기</a>
-                                    </div>
-                                </div>
-                                <div class="dropdown-menu dropdown-menu_4"><a href="https://www.kakaobank.com/Help/Guide/Faq">고객센터</a>
-                                </div>
-                                <div class="dropdown-menu dropdown-menu_3"><a href="https://www.kakaobank.com/products/withdrawal">상품안내</a>
-                                </div>
-                                <div class="dropdown-menu dropdown-menu_2"><a href="https://www.kakaobank.com/IR/Announcement/Business/pages/1">IR투자정보</a>
-                                </div>
-                                <div class="dropdown-menu dropdown-menu_1"><a href="https://www.kakaobank.com/Corp/About/Identity">은행소개</a>
-                                </div>
-                            </div>
-                        </div>
-
-
- */
 
  .head-dropdown {
     z-index: 9999;
