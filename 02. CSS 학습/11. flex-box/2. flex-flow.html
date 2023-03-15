@@ -11,14 +11,18 @@
             padding: 20px;
             display: flex;
 
+            
             /* nowrap: item들이 한줄을 유지함 */
-            flex-wrap:wrap; 
+            flex-wrap: wrap; 
 
             /* 기본값은 row */
             flex-direction: column;
             /* column
                float가 풀리는 효과(수평 배치를 푼다.)
                모바일에서 많이 사용 */
+            /* 단축 속성(순서는 상관없다.) */
+            /* flex-flow: wrap row-reverse; */
+            /* flex-direction 과 flex-raw 의 단축속성*/
 
         }
 
@@ -31,8 +35,7 @@
             text-align: center;
             line-height: 100px;
 
-            /* 단축 속성(순서는 상관없다.) */
-            flex-flow: wrap row-reverse;
+          
 
         }
 

@@ -1,49 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box{
-            width: 200px;
-            height: 200px;
-            background-color: orange;
-            margin: 50px;
-            text-align: center;
-            line-height: 200px;
-            font-weight: bold;
-            font-size: 50px;
-        }
 
-        .box1{
-            transition-property: width, background;
-            transition-duration: 0.5s;
-            
-            
-
-        }
-        .box1:hover{
-           
-            background-color: aqua;
-            transform: scale(0.8)
-            translateX(200px)
-
-        }
-  
     </style>
+    <!-- position 영구적인 이동
+        translate 이동은 애니매이션 이동
+    -->
 
 </head>
+ <style>
 
+        .box {
+            width: 200px;
+            height: 200px;
+            background: orange;
+            margin: 50px;
+            font-size: 50px;
+            text-align: center;
+            line-height: 200px;
+            transition: 1s;
+        }
+
+        .box1:hover {
+            /* 회전 효과 */
+            transform: rotate(720deg) translate(100px, 150px) scale(2) skew(20deg);
+
+            
+        }
+        .box2:hover {
+            /* 이동효과 */
+
+            /* 
+                position이동은 영구적인 이동
+                translate이동은 애니메이션 이동
+            */
+
+            transform: translate(220px, -100px);
+            /* position: relative;
+            left: 220px;
+            top: -100px; */
+        }
+
+        .box3:hover  {
+            /* 확대, 축소 */
+            /* 1.2배 확대 */
+            transform: scale(1.2);
+            /* 80% 축소 */
+            /* transform: scale(0.8); */
+        }
+
+        .box4:hover {
+            /* 비틀기 효과 */
+            transform: skew(20deg, 30deg);
+        }
+
+        .box5:hover {
+            transform: rotate(360deg) scale(1.2) translateX(100px);
+        }
+    </style>
+</head>
 <body>
+    
     <div class="box box1">1</div>
     <div class="box box2">2</div>
     <div class="box box3">3</div>
     <div class="box box4">4</div>
     <div class="box box5">5</div>
-
 </body>
-
 </html>

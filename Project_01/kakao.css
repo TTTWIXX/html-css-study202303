@@ -160,32 +160,6 @@ border-bottom: 2px solid #000;
 .head-dropdown:hover{
     display: block ;
 }
-/* dropdown-head-logo */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .head .menu_3 {
     border-bottom: white;
@@ -468,26 +442,27 @@ border-bottom: 2px solid #000;
     width: 100%;
     border: none;
     border-bottom: 1px solid #e6e6e6;
-    ;
+
     text-align: left;
     outline: none;
     font-size: 18px;
-    transition: 0;
     border-top: 1px solid #e6e6e6;
 
 }
 
 .active {
     background-color: #f4f4f4;
+
 }
 
-.accordion:hover {}
+
 
 .panel {
     padding: 0 30px;
     display: none;
     background-color: #f4f4f4;
     overflow: hidden;
+ 
 
 }
 
@@ -497,6 +472,7 @@ border-bottom: 2px solid #000;
     font-size: 14px;
     line-height: 20px;
     color: #666;
+   
 
 }
 
@@ -506,6 +482,7 @@ border-bottom: 2px solid #000;
     font-size: 15px;
     line-height: 20px;
     color: #111;
+    
 }
 
 .panel p {
@@ -514,6 +491,7 @@ border-bottom: 2px solid #000;
     font-size: 14px;
     line-height: 20px;
     color: #666;
+    
 }
 
 .submain-11 {
