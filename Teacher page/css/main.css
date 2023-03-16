@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+/* reset */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+}
+
+/* common style */
+.wrap {
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.hide {
+    display: none !important;
+}
+/* 이클레스를 부여하면 화면에서 사라진다. */
+
+/* header style */
+header{
+    position: fixed;
+    /* position:fixed  가로길이 100%깨진다.*/
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+header .inner-header{
+
+    width: 92%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 한줄일경우 많이사용한다. */
+    
+    font-size: 700;
+    color: #fff;
+
+}
+
+header .inner-header .logo{
+
+    flex-grow: 1;
+}
+header .inner-header .logo a{
+    width: 100%;
+    display: block;
+}
+header .inner-header .logo a img{
+    height: 60px;
+}
+header .inner-header .intro-text{
+    text-transform: uppercase;
+    flex-grow: 4;
+}
+
+header .inner-header .menu-open{
+
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+}
+header .inner-header .menu-open .menu-txt{
+    background: pink;
+}
+header .inner-header .menu-open .lnr-menu {
+    font-size: 33px;
+    background: red;
+    
+}
+
